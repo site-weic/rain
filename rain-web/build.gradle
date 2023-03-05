@@ -1,0 +1,7 @@
+bootJar {
+    enabled true
+}
+dependencies {
+    api project(":rain-service")
+    api 'org.springframework.boot:spring-boot-starter-web'
+}

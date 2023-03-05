@@ -1,0 +1,6 @@
+rootProject.name = 'rain'
+include 'rain-test'
+include 'rain-common'
+include 'rain-web'
+include 'rain-service'
+

@@ -1,0 +1,21 @@
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+jar {
+    enabled = true
+}
+dependencies {
+    api project(":rain-common")
+}
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = project.group
+//            artifactId = project.name
+//            version = project.version
+//
+//            from components.java
+//        }
+//    }
+//}

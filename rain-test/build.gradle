@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+//apply plugin: 'jacoco'
+
+dependencies {
+    implementation project(":rain-web")
+    testImplementation 'org.spockframework:spock-spring:2.4-M1-groovy-4.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
