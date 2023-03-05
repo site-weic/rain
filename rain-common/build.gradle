@@ -5,3 +5,19 @@ java {
 jar {
     enabled = true
 }
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+}
+
+publishing {
+    publications {
+        mavenCommon(MavenPublication) {
+            groupId = project.group
+            artifactId = project.name
+            version = project.version
+
+            from components.java
+        }
+    }
+}
